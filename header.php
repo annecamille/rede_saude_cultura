@@ -32,6 +32,17 @@
 		<meta property="og:description" content="<?php bloginfo('description'); ?>" />
 		<!-- Facebook OpenGraph Tags -->
 	</head>
+	
+	<div id="barras-governo">
+  <div id="barra-brasil">
+      <div class="barra">
+          <ul>
+             <li class="acesso"><a href="http://www.acessoainformacao.gov.br" class="ai" title="Acesso à informação">www.sic.gov.br</a></li>
+             <li><a href="http://www.brasil.gov.br" class="brasilgov" title="Portal de Estado do Brasil">www.brasil.gov.br</a></li>
+          </ul>
+      </div>
+  </div>
+</div>
 
 	<body <?php body_class() ?> id="bp-default">
 	<!--[if lte IE 6]><script src="<?php bloginfo('template_directory'); ?>/_inc/js/ie6/warning.js"></script><script>window.onload=function(){e("<?php bloginfo('stylesheet_directory'); ?>/_inc/js/ie6/")}</script><![endif]-->
