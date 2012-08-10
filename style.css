@@ -349,7 +349,6 @@ div#sidebar .padder {
 	padding: 0 0 0 20px;
 }
 div#sidebar .widget {
-	margin-bottom: 25px;
 	padding: 10px 12px;
 	overflow:hidden;
 	-moz-border-radius: 3px;
@@ -398,9 +397,7 @@ div#sidebar .widget ul.item-list {
 	border-top: none;
 }
 div#sidebar .widget ul.item-list li {
-	border-top: 1px solid #d7d7d7;
-	border-bottom: none;
-	min-height: 30px;
+	border-bottom: 1px solid #d7d7d7;
 }
 div#sidebar .widget ul.item-list div.item-meta,
 div#sidebar .widget ul.item-list div.item-content {
@@ -705,7 +702,7 @@ h6 { font-size: 12px; }
 
 a {
 	text-decoration: none;
-	color: #497EA8;
+	color: #09C;
 }
 a:hover, a:active {
 	text-decoration: underline;
@@ -4164,7 +4161,6 @@ div#sidebar.group-sidebar {
   margin-top: 15px;
 }
 div#sidebar .widget {
-  margin-bottom: 5px;
   padding: 10px 3px;
   overflow: visible;
   border: none;
@@ -4172,17 +4168,15 @@ div#sidebar .widget {
 }
 div#item-actions, div#item-actions h3, div#item-actions ul li h5 a{
 	/* width: 160px;  necessary for IE7 */
-	color: #A5A5A5;
 }
 div#item-actions, div#item-actions h3, div#item-actions ul li h5 a:hover{
-	color: #4FA5CE;
+	color: #6D6D6D;
 	text-decoration: none;
 }
 div#sidebar .widget,
 div#sidebar div.item-list-tabs,
 div#sidebar div.item-list-tabs{
   background: none;
-  width: 175px;
 }
 div#sidebar .widget_bpnextprofilewidget div.login-box,
 .bluebar{
@@ -4416,7 +4410,7 @@ div#sidebar .padder h2 a:hover { color:#0099cc; text-decoration: none; }
 div#sidebar h3.widgettitle{
   z-index: 100;
   margin: 0 0 10px 0;
-  color: #0990ca;
+  color: #6D6D6D;
 }
 .p-cat { font: normal 11px/14px 'Arial'; text-transform: uppercase; color:#999;}
 .p-cat a, .p-cat a:visited, .p-cat a:hover { text-decoration: underline; color:#999; padding-right: 5px;}
