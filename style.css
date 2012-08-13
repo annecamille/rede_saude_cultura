@@ -2335,6 +2335,10 @@ div#user-social-links span.twitter{
 div#user-social-links span.google-plus {
 	background: url('./_inc/images/icon-user-social-links.jpg') 0 26px;
 }
+div#item-buttons div.generic-button{
+	float: left;
+	margin: 0 10px 0 0;
+}
 div.two_column div#item-header div#item-meta {
 	position: static;
 	clear: left;
@@ -2399,7 +2403,6 @@ div#item-header ul.avatars img.avatar {
 	margin: 2px;
 }
 div#item-header div.generic-button, div#item-header a.button {
-	margin: 0;
 	z-index: 999;
 }
 div#item-header div#message.info { 
@@ -4265,6 +4268,7 @@ div.item-list-tabs .feed{
 	border: 1px solid #D1D1D1;
 	background: #eaeaea;
 	border-radius: 5px;
+	margin: 20px 0;
 }
 #destacado #item-nav ul li{
   float: left;
@@ -4284,7 +4288,6 @@ ul.item-list li div.item-title, ul.item-list li h4 {
   margin: 0;
 }
 #item-buttons{
-  margin: 5px 3px 5px;
   padding-top: 10px;
   clear: both;
 }
@@ -4677,11 +4680,11 @@ a.friendship-button.pending.requested, a.friendship-button.pending.requested:hov
 	color: #FFF;
 	background: #D6D6D6;
 }
-a.add, a.request-membership, a.visit {
+a.add, a.request-membership, a.visit, a.send-message {
 	color: #FFFFFF;
 	background: #8AC3DA;
 }
-a.add:hover, a.request-membership:hover, a.visit:hover {
+a.add:hover, a.request-membership:hover, a.visit:hover, a.send-message:hover {
 	color: #FFFFFF;
 	background: #B2D3E0;
 }
@@ -4693,11 +4696,11 @@ a.remove:hover, a.leave-group:hover {
 	color: #FFFFFF;
 	background: #F58B8B;
 }
-a.join-group {
+a.join-group, a.activity-button {
 	color: #FFFFFF;
 	background: #90D351;
 }
-a.join-group:hover {
+a.join-group:hover, a.activity-button:hover {
 	color: #FFFFFF;
 	background: #AADA7D;
 }
