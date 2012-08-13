@@ -34,16 +34,17 @@
     
 	<h3>Redes Sociais</h3>
     <div id="user-social-links">  
+		<span class="facebook">
+			<a class="facebook-link" href="<?php  bp_profile_field_data( 'field=Facebook' ); ?>"><?php  bp_profile_field_data( 'field=Facebook' ); ?></a>
+		</span>
 		
-      <span class="twitter">
-          <a class="twitter-link" href="<?php  bp_profile_field_data( 'field=Twitter' ); ?>"><?php  bp_profile_field_data( 'field=Twitter' ); ?></a>
-      </span>
-      <span class="facebook">
-          <a class="facebook-link" href="<?php  bp_profile_field_data( 'field=Facebook' ); ?>"><?php  bp_profile_field_data( 'field=Facebook' ); ?></a>
-      </span>
-      <span class="google-plus">
-          <a class="google-plus" href="<?php  bp_profile_field_data( 'field=Google+' ); ?>"><?php  bp_profile_field_data( 'field=Google+' ); ?></a>
-      </span>
+		<span class="twitter">
+			<a class="twitter-link" href="<?php  bp_profile_field_data( 'field=Twitter' ); ?>"><?php  bp_profile_field_data( 'field=Twitter' ); ?></a>
+		</span>
+      
+		<span class="google-plus">
+			<a class="google-plus-link" href="<?php  bp_profile_field_data( 'field=Google+' ); ?>"><?php  bp_profile_field_data( 'field=Google+' ); ?></a>
+		</span>
     </div>
     
 		<?php

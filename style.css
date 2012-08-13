@@ -2315,6 +2315,26 @@ div.ensino{
 div.lugar{
 	background: url('./_inc/images/icon-perfil-user.jpg') no-repeat 0 -37px;
 }
+div#item-meta h3{
+	font-size: 13px;
+	margin: 0;
+}
+div#user-social-links span{
+	width: 26px;
+	height: 26px;
+	display: block;
+	float: left;
+	margin: 0 5px 0 0;
+}
+div#user-social-links span.facebook {
+	background: url('./_inc/images/icon-user-social-links.jpg');
+}
+div#user-social-links span.twitter{
+	background: url('./_inc/images/icon-user-social-links.jpg') 0 -26px;
+}
+div#user-social-links span.google-plus {
+	background: url('./_inc/images/icon-user-social-links.jpg') 0 26px;
+}
 div.two_column div#item-header div#item-meta {
 	position: static;
 	clear: left;
@@ -3723,7 +3743,9 @@ div#item-header-avatar {
   left: -170px;
 }
 #item-header-avatar a img{
-  width: 150px;
+	width: 150px;
+	border: 1px solid #CACACA;
+	padding: 3px;
 }
 #destacado {
   float: left;
@@ -4213,7 +4235,7 @@ div#item-header div#message {
 }
 div#item-header-content{
   width: auto;
-  margin: 0 0 10px 0;
+  margin: 0 0 10px 15px;
 }
 div#item-header-avatar {
   position: relative;
@@ -4743,11 +4765,6 @@ h3.widgettitle-hb {
 	width: 60px;
 	background: url('./_inc/images/footer-icone.jpg') 60px 0;
 }
-
-#user-social-links {
-  display:none;
-}
-
 #group-imagem-pequena {
 	float: right;
 	margin-top: 5px;
