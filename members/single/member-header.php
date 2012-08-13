@@ -18,14 +18,23 @@
 
 <div id="item-header-content">
 
-	<h2><a href="<?php bp_displayed_user_link() ?>"><?php bp_displayed_user_fullname() ?></a></h2> 
+	<h2><?php bp_displayed_user_fullname() ?><span class="user-nicename">@<?php bp_displayed_user_username(); ?></span></h2>
 	
 	<?php do_action( 'bp_before_member_header_meta' ) ?>
   
-  <div id="item-meta">
-    <span class="user-nicename">@<?php bp_displayed_user_username(); ?></span>
   
+   <div class="entry-directory">
+    <div class="sobre"><?php  //bp_profile_field_data( 'field=Sobre mim' ); ?></div>
+	<div class="trabalho">Trabalha na empresa:</div>
+	<div class="ensino">Estudou...:</div>
+	<div class="lugar">Mora em:</div>
+   </div>
+   
+   <div id="item-meta">
+    
+	<h3>Redes Sociais</h3>
     <div id="user-social-links">  
+		
       <span class="twitter">
           <a class="twitter-link" href="<?php  bp_profile_field_data( 'field=Twitter' ); ?>"><?php  bp_profile_field_data( 'field=Twitter' ); ?></a>
       </span>
@@ -47,10 +56,7 @@
 		<?php do_action( 'bp_profile_header_meta' ) ?>
 
 	</div><!-- #item-meta -->
-   <div class="entry-directory">
-     <div class="sobre"><?php  bp_profile_field_data( 'field=Sobre mim' ); ?></div>
-   </div>
-   
+	
 </div><!-- #item-header-content -->
 
 <?php do_action( 'bp_after_member_header' ) ?>

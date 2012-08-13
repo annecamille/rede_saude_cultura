@@ -2285,22 +2285,35 @@ div#item-header-content h2 {
 	margin: 0;
 	line-height: 120%;
 }
-div#item-header h2 a {
-	text-decoration: none;
-	color: #717171;
-}
-div#item-header h2 a:hover {
-	color: #000;
+div#item-header h2 span.user-nicename {
+	font-size: 16px;
+	color: #AFAFAF;
+	margin: 0 0 0 5px;
 }
 div#item-header img.avatar {
 	float: left;
 }
 div#item-header div#item-meta {
 	color: #333333;
-  font-size: 16px;
-  position: absolute;
-  right: 0;
-  top: 5px;
+	font-size: 16px;
+}
+div#item-header-content div.entry-directory {
+	font-size: 10px;
+	color: #616161;
+	margin: 5px 0;
+}
+div.trabalho, div.ensino, div.lugar{
+	height: 20px;
+	padding: 0 0 0 15px;
+}
+div.trabalho{
+	background: url('./_inc/images/icon-perfil-user.jpg') no-repeat 0 2px;
+}
+div.ensino{
+	background: url('./_inc/images/icon-perfil-user.jpg') no-repeat 0 -19px;
+}
+div.lugar{
+	background: url('./_inc/images/icon-perfil-user.jpg') no-repeat 0 -37px;
 }
 div.two_column div#item-header div#item-meta {
 	position: static;
@@ -2400,10 +2413,6 @@ div.two_column #forum-header h3,
 div.two_column #forum-header span.group-type,
 div.two_column div#topic-meta div.admin-links {
 	width: 678px;
-}
-.entry-directory {
-	margin: 10px 0;
-	line-height: 21px;
 }
 
 /*--------------------------------------------------------------
@@ -4251,14 +4260,6 @@ ul.item-list li div.item-title, ul.item-list li h4 {
   font-size: 17px;
   width: auto;
   margin: 0;
-}
-div#item-header div#item-meta {
-  color: #333;
-  font-size: 16px;
-  position: absolute;
-  right: 0;
-  top: 5px; 
-  padding: 0px 5px;
 }
 #item-buttons{
   margin: 5px 3px 5px;
