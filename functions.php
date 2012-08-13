@@ -96,7 +96,7 @@ if ( function_exists ('register_sidebar')) {
       'description'   => 'Quarto bloco do topo da home.',
       'before_widget' => '<div id="%1$s" class="widget %2$s">',
       'after_widget'  => '</div>',
-      'before_title'  => '<h4 class="widgettitle-face">',
+      'before_title'  => '<h4 class="widgettitle-home">',
       'after_title'   => '</h4>'
     )
   );

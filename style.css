@@ -148,14 +148,6 @@ div#espaco-01 {
 	height: 240px;
 	margin: 20px 0;
 }
-#home-content-top h3.widgettitle-home-facebook, #home-content-top h3.widgettitle-home-twitter, div#espaco-01 .box-login {
-	width: 230px;
-	height: 140px;
-	float: left;
-	margin: 0 8px;
-	background: #F7F7F7;
-	border: 0px solid #000;
-}
 #home-content-top{
 	width: 236px;
 	height: 230px;
@@ -191,7 +183,10 @@ span.rss-date {
 	font-size: 9px;
 	color: #B6B6B6;
 }
-#loginwithajaxwidget-2 h4.widgettitle-home {
+div.tb_tweetlist {
+	font-size: 11px;
+}
+div.widget_custom_login h4.widgettitle-home {
 	text-shadow: 1px 1px 0 #B1B1B1;
 	background: #DADADA url('./_inc/images/icones-home.png') no-repeat 0 -60px;
 }
@@ -199,27 +194,15 @@ span.rss-date {
 	text-shadow: 1px 1px 0 #2193D3;
 	background: #81c6f9 url('./_inc/images/icones-home.png') no-repeat 0 -30px;
 }
-div#rss-2 h4 a.rsswidget {
+div.widget_rss h4 a.rsswidget {
 	color: #FFF;
 }
-div#rss-2 h4 {
+div.widget_rss h4 {
 text-shadow: 1px 1px 0 #C27819;
 background: #F5A43C url('./_inc/images/icones-home.png') no-repeat 0 -90px;
 }
-div#rss-2 h4:first-child a img{
+div.widget_rss h4:first-child a img{
 	display: none;
-}
-h4.widgettitle-face {
-text-shadow: 1px 1px 0 #1D52C2;
-background: #447CF3 url('./_inc/images/icones-home.png') no-repeat;
-font-size: 14px;
-	height: 25px;
-	color: #FFF;
-	display: block;
-	text-transform: uppercase;
-	padding: 5px 0 0 35px;
-	margin: 0 0 8px 0;
-	border: 0px solid #000;
 }
 /*--------------------------------------------------------------
 2.2 - Header
