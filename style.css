@@ -4625,20 +4625,22 @@ div.generic-button group-button private a.group-button leave-group{
 	color: #F00;
 }
 #bug {
-	color: #FFF;
-	border: 1px solid #e62c2c;
-	border-radius: 5px 5px 0 0;
-	width: 120px;
-	background: #e96161 url('./_inc/images/bg-bug.jpg');
-	height: 20px;
+	color: white;
+	border: 1px solid #82A247;
+	border-radius: 3px 3px 0 0;
+	width: 135px;
+	height: 25px;
 	text-align: center;
-	padding-top: 6px;
+	padding-top: 8px;
+	font-size: 11px;
+	text-shadow: 1px 1px 2px #435800;
+	line-height: 15px;
 	position: fixed;
 	bottom: 0;
-	right: 0;
+	right: 5px;
+	background: #7EA732 url('./_inc/images/bg-bug.jpg');
 }
 #bug:hover {
-color: #F8D9D9;
 text-decoration: none;
 }
 /* - - - - - BOTÕES - - - -  */
