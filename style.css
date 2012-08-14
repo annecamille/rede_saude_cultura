@@ -588,6 +588,9 @@ div#wdg_specialrecentposts-2 h3.widgettitle-home {
 	padding: 5px 5px 5px 40px;
 	margin: 0 0 10px 0;
 }
+p.login-username label, p.login-password label {
+	display: block;
+}
 /*--------------------------------------------------------------
 2.5 - Formulários
 --------------------------------------------------------------*/
@@ -629,7 +632,7 @@ div#espaco-01 .box-login input.login {
 	clear: left;
 }
 p {
-	margin-bottom: 15px;
+	margin-bottom: 5px;
 }
 p:last-child {
 	margin-bottom: 0 !important;
@@ -948,7 +951,6 @@ div.page h1.pagetitle, h1.posttitle {
 	float: left;
 	margin-right: 15px;
 }
-div.post p, div.page p { margin: 0; }
 div.post ul, div.post ol, div.post dl,
 div.page ul, div.page ol, div.page dl { margin: 0 0 18px 3em; }
 /*div.post ul, div.page ul { list-style: square; }*/
@@ -4221,7 +4223,6 @@ div#item-header div#message {
 }
 div#item-header-content{
   width: auto;
-  margin: 0 0 10px 15px;
 }
 div#item-header-avatar {
   position: relative;
