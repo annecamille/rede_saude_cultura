@@ -16,7 +16,7 @@ if ( function_exists ('register_sidebar')) {
     )
   );
  
-  // Area 3, Bloco que ficará no HEADER.
+  // Area 3, Bloco que ficarï¿½ no HEADER.
   register_sidebar( array(
       'name'          => 'Header Block',
       'id'            => 'header-block',
@@ -28,7 +28,7 @@ if ( function_exists ('register_sidebar')) {
     )
   ); 
   
-  // Area 4, Bloco left que ficará na HOME.
+  // Area 4, Bloco left que ficarï¿½ na HOME.
   register_sidebar( array(
       'name'          => 'Home Content Left',
       'id'            => 'home-content-left',
@@ -41,7 +41,7 @@ if ( function_exists ('register_sidebar')) {
   );
   
   
-  // Area 5, Bloco right que ficará na HOME.
+  // Area 5, Bloco right que ficarï¿½ na HOME.
   register_sidebar( array(
       'name'          => 'Home Content Right',
       'id'            => 'home-content-right',
@@ -103,8 +103,89 @@ if ( function_exists ('register_sidebar')) {
   
 }
 
-// Desativa a barra lá de cima
+// Desativa a barra la de cima
 define('BP_DISABLE_ADMIN_BAR', true);
+
+// _------------------- SHORTCODES ------------------------ //
+
+// [ displayedUserSocialLinks ]
+function displayedUserSocialLinks_func( $atts = array() ) {
+	/*
+	extract( shortcode_atts( array(
+			'foo' => 'something',
+			'bar' => 'something else',
+	), $atts ) );
+*/
+	// variables //
+	$body = '';
+	$facebook = bp_get_profile_field_data( 'field=Facebook'); 
+	$twitter = bp_get_profile_field_data( 'field=Twitter' );
+	$google_plus = bp_get_profile_field_data( 'field=Google+' );
+
+	// if a variable dont are empty add to return html ( body) ...
+	if( $facebook ){
+				$body .= '<span class="facebook">';
+				$body .= '<a class="facebook-link" href="' .
+					$facebook .'
+					">' . $facebook . '</a>';
+				$body .= '</span>';
+	}
+	
+	if( $twitter ){		
+				$body .= '<span class="twitter">';
+				$body .= '<a class="twitter-link" href=" '. 
+					$twitter . '">' .
+					$twitter . '</a>';
+				$body .= '</span>';
+  }
+	
+  if( $google_plus ){
+				$body .= '<span class="google-plus">';
+				$body .= '<a class="google-plus-link" href="' .
+					$google_plus . '">'.
+					$google_plus . '</a>';
+				$body .= '</span>';
+	}
+
+	// return the variable or a empty string
+	if ($body)
+  	return $body;
+  return '';
+}
+add_shortcode( 'displayedUserSocialLinks', 'displayedUserSocialLinks_func' );
+
+// [ displayedUserInfo ]
+function displayedUserInfo_func( $atts = array() ) {
+
+	$body = '';
+	
+	$sobre = bp_get_profile_field_data( 'field=Sobre mim');
+	$trabalho = bp_get_profile_field_data( 'field=Facebook');
+	$ensino = bp_get_profile_field_data( 'field=Twitter' );
+	$lugar = bp_get_profile_field_data( 'field=Estado' );
+
+	if($sobre){
+	  $body .=  '<div class="sobre">' .	$sobre . '</div>';
+	}
+
+	if($trabalho){
+		$body .= '<div class="trabalho">Trabalha na empresa: '. $trabalho .'</div>';
+	}
+
+	if($ensino){
+		$body .= '<div class="ensino">Estudou: '. $ensino .'</div>';
+	}
+
+	if($lugar){
+		$body .= '<div class="lugar">Mora em: '. $lugar . '</div>';
+	}
+
+	if ($body)
+  	return $body ;
+  return '';
+}
+add_shortcode( 'displayedUserInfo', 'displayedUserSocialLinks_func' );
+
 
 
 ?>
