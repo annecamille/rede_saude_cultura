@@ -150,7 +150,7 @@ div#espaco-01 {
 }
 #home-content-top{
 	width: 236px;
-	height: 230px;
+	height: 280px;
 	float: left;
 	margin: 0 6px 10px 6px;
 	background: #F7F7F7;
@@ -4268,7 +4268,6 @@ div.item-list-tabs .feed{
 ul.item-list li div.item-title, ul.item-list li h4 {
   font-weight: bold;
   font-size: 17px;
-  width: auto;
   margin: 0;
 }
 #item-buttons{
