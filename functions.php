@@ -108,7 +108,7 @@ define('BP_DISABLE_ADMIN_BAR', true);
 
 // _------------------- SHORTCODES ------------------------ //
 
-// [ displayedUserSocialLinks ]
+// [displayedUserSocialLinks]
 function displayedUserSocialLinks_func( $atts = array() ) {
 	/*
 	extract( shortcode_atts( array(
@@ -117,7 +117,10 @@ function displayedUserSocialLinks_func( $atts = array() ) {
 	), $atts ) );
 */
 	// variables //
+	$title = '<h3>Redes Sociais</h3>';
+  $body_pre = '<div id="user-social-links">';
 	$body = '';
+	$body_pos = '</div>';
 	$facebook = bp_get_profile_field_data( 'field=Facebook'); 
 	$twitter = bp_get_profile_field_data( 'field=Twitter' );
 	$google_plus = bp_get_profile_field_data( 'field=Google+' );
@@ -149,23 +152,23 @@ function displayedUserSocialLinks_func( $atts = array() ) {
 
 	// return the variable or a empty string
 	if ($body)
-  	return $body;
+  	return $title . $body_pre . $body . $body_pos;
   return '';
 }
 add_shortcode( 'displayedUserSocialLinks', 'displayedUserSocialLinks_func' );
 
-// [ displayedUserInfo ]
+// [displayedUserInfo]
 function displayedUserInfo_func( $atts = array() ) {
 
 	$body = '';
-	
+
 	$sobre = bp_get_profile_field_data( 'field=Sobre mim');
-	$trabalho = bp_get_profile_field_data( 'field=Facebook');
+	$trabalho = bp_get_profile_field_data( 'field=Trabalho');
 	$ensino = bp_get_profile_field_data( 'field=Twitter' );
 	$lugar = bp_get_profile_field_data( 'field=Estado' );
 
 	if($sobre){
-	  $body .=  '<div class="sobre">' .	$sobre . '</div>';
+	  //$body .=  '<div class="sobre">' .	$sobre . '</div>';
 	}
 
 	if($trabalho){
@@ -181,10 +184,10 @@ function displayedUserInfo_func( $atts = array() ) {
 	}
 
 	if ($body)
-  	return $body ;
+  	return $body;
   return '';
 }
-add_shortcode( 'displayedUserInfo', 'displayedUserSocialLinks_func' );
+add_shortcode( 'displayedUserInfo', 'displayedUserInfo_func' );
 
 
 

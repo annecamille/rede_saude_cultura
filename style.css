@@ -2304,21 +2304,24 @@ div#item-meta h3{
 	font-size: 13px;
 	margin: 0;
 }
-div#user-social-links span{
+div#user-social-links span a{
 	width: 26px;
 	height: 26px;
 	display: block;
 	float: left;
 	margin: 0 5px 0 0;
 }
-div#user-social-links span.facebook {
+div#user-social-links span.facebook a{
 	background: url('./_inc/images/icon-user-social-links.jpg');
 }
-div#user-social-links span.twitter{
+div#user-social-links span.twitter a{
 	background: url('./_inc/images/icon-user-social-links.jpg') 0 -26px;
 }
-div#user-social-links span.google-plus {
+div#user-social-links span.google-plus a{
 	background: url('./_inc/images/icon-user-social-links.jpg') 0 26px;
+}
+#user-social-links a{
+	text-indent: -9999px;
 }
 div#item-buttons div.generic-button{
 	float: left;

@@ -29,9 +29,7 @@
    </div>
    
    <div id="item-meta">
-    
-		<?php echo do_shortcode('[displayedUserSocialLinks]'); ?>
-    
+			<?php echo do_shortcode('[displayedUserSocialLinks]'); ?>
 		<?php
 		 /***
 		  * If you'd like to show specific profile fields here use:
