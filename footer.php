@@ -57,7 +57,7 @@
     <script language="JavaScript">
       /* <![CDATA[ */
       jQuery(document).ready(function() {
-      jQuery('.duvidas-ou-sugestoes').colorbox({href:'http://www.next.icict.fiocruz.br/sec/wp-content/plugins/bug-library/submitnewissue.php', opacity: 0.3, iframe:true, width:'570px', height:'660px'});});/* ]]&gt; */
+      jQuery('.duvidas-ou-sugestoes').colorbox({href:'http://www.next.icict.fiocruz.br/sec/wp-content/plugins/bp-next-simple-user-report/submitnewissue.php', opacity: 0.3, iframe:true, width:'570px', height:'660px'});});/* ]]&gt; */
     </script>
     
 	</body>
