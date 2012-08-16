@@ -27,7 +27,7 @@
       } ?>
 
 		<!-- Facebook OpenGraph Tags -->
-		<meta property="og:image" content="<?php echo $logo ?>" />
+		<meta property="og:image" content="/_inc/images/avatar-group.jpg" />
 		<meta property="og:site_name" content="<?php bloginfo( 'name' ); ?>" />
 		<meta property="og:description" content="<?php bloginfo('description'); ?>" />
 		<!-- Facebook OpenGraph Tags -->
@@ -60,7 +60,7 @@
 						<div id="logo">
 								<a href="<?php echo site_url() ?>" title="<?php _e( 'Home', 'buddypress' )
 					
-						 ?>"><img src="<?php echo $logo ?>"/></a>
+						 ?>"><img src="<?php echo $logo ?>" alt="Rede Internet e Saúde" title="Rede Internet e Saúde"/></a>
 						</div>
 						<div class="description"><?php bloginfo('description'); ?></div>
 						
