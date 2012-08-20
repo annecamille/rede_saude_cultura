@@ -164,7 +164,7 @@ function displayedUserInfo_func( $atts = array() ) {
 
 	$sobre = bp_get_profile_field_data( 'field=Sobre mim');
 	$trabalho = bp_get_profile_field_data( 'field=Trabalho');
-	$ensino = bp_get_profile_field_data( 'field=Twitter' );
+	// $ensino = bp_get_profile_field_data( 'field=Twitter' );
 	$lugar = bp_get_profile_field_data( 'field=Estado' );
 
 	if($sobre){
@@ -174,11 +174,11 @@ function displayedUserInfo_func( $atts = array() ) {
 	if($trabalho){
 		$body .= '<div class="trabalho">Trabalha na empresa: '. $trabalho .'</div>';
 	}
-
+/*
 	if($ensino){
 		$body .= '<div class="ensino">Estudou: '. $ensino .'</div>';
 	}
-
+*/
 	if($lugar){
 		$body .= '<div class="lugar">Mora em: '. $lugar . '</div>';
 	}
