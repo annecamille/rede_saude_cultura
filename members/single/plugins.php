@@ -8,7 +8,7 @@
  * to output everything your plugin needs.
  *
  * @package BuddyPress
- * @subpackage BuddyBoss
+ * @subpackage rede_saude_cultura
  */
 
 ?>
@@ -16,8 +16,6 @@
 <?php get_header( 'buddypress' ); ?>
 
   <?php locate_template( array( 'sidebar-left.php' ), true ) ?>
-
-
 
    <?php if ( is_active_sidebar('profile') ) : ?> 
      <div id="content" class="three_column">  

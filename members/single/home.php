@@ -7,9 +7,7 @@
  * @subpackage BuddyBoss
  */
  
-?>
-
-<?php get_header( 'buddypress' ); ?>
+get_header( 'buddypress' ); ?>
 
   <?php locate_template( array( 'sidebar-left.php' ), true ) ?>
 
@@ -42,10 +40,6 @@
               <?php } else { ?>
                 <ul>
                   <?php bp_get_displayed_user_nav() ?>
-
-                  <?php  /* if ( has_nav_menu( 'profile-menu' ) ) : ?>
-                      <?php wp_nav_menu( array( 'container' => false, 'menu_id' => 'nav', 'theme_location' => 'profile-menu', 'items_wrap' => '%3$s' ) ); ?>
-                  <?php endif; */?>
 
                   <?php do_action( 'bp_member_options_nav' ) ?>
                 </ul>
