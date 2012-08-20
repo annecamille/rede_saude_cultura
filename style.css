@@ -747,6 +747,11 @@ body.home-page div.item-list-tabs,
 ul.button-nav, #bps_Form {
 	background-color: none;
 }
+div#item-body div#subnav.item-list-tabs ul li a,
+div.item-list-tabs ul li a,
+ul.button-nav li a {
+	background-color: #D8EAF3;
+}
 
 /*--------------------------------------------------------------
 4.0 - Navigation
@@ -2230,12 +2235,15 @@ body.buddyboss-active-wall div#subnav.item-list-tabs ul li#favorites-personal-li
 div#subnav.item-list-tabs ul li#my-gallery-personal-li a {
 	background-image: url( ./_inc/images/icon-photo.gif );
 }
-div#item-body div#subnav.item-list-tabs ul li a, ul.button-nav li a {
+div#item-body div#subnav.item-list-tabs ul li a,
+div.item-list-tabs ul li a,
+ul.button-nav li a {
 	padding: 8px 5px;
 	display: block;
 	margin: 0; /* makes up for no border */
-	background: #B8B8B8;
+	background: #C4C4C4;
 	color: #FFF;
+	font-weight: bold;
 	text-decoration: none;
 	-moz-border-radius: 3px 3px 0 0;
 	-webkit-border-top-left-radius: 3px;
@@ -2552,7 +2560,6 @@ div#sub-nav.item-list-tabs li {
 div#object-nav.item-list-tabs li a,
 div#sub-nav.item-list-tabs li a {
 	padding: 2px 6px;
-	font-weight: bold;
 	background-color: transparent;
 	color: #727272;
 }
@@ -4233,7 +4240,7 @@ div#item-header-avatar {
 div#item-body div#subnav.item-list-tabs ul li,
 div.item-list-tabs ul li,
 ul.button-nav li {
-  margin: 0 2px 0 0;
+  margin: 5px 2px 0 0;
   float: left;
 }
 div.item-list-tabs .feed{
