@@ -2561,7 +2561,7 @@ div#sub-nav.item-list-tabs li {
 }
 div#object-nav.item-list-tabs li a,
 div#sub-nav.item-list-tabs li a {
-	padding: 2px 5px;
+	padding: 2px 6px;
 	background-color: transparent;
 	color: #727272;
 }
