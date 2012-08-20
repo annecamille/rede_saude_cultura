@@ -49,9 +49,9 @@
 
           </ul>
         </div><!-- .item-list-tabs -->			  
-			  
+
 				<div class="activity no-ajax">
-					<?php if ( bp_has_activities( 'display_comments=threaded&include=' . bp_current_action() ) ) : ?>
+           <?php if ( bp_has_activities( 'display_comments=threaded&show_hidden=true&include=' . bp_current_action() ) ) : ?>
 				
 						<ul id="activity-stream" class="activity-list item-list">
 						<?php while ( bp_activities() ) : bp_the_activity(); ?>

@@ -6,19 +6,16 @@
  * Querystring is set via AJAX in _inc/ajax.php - bp_dtheme_object_filter()
  *
  * @package BuddyPress
- * @subpackage BuddyBoss
+ * @subpackage rede_saude_cultura
  */
 
 ?>
 
 <?php do_action( 'bp_before_activity_loop' ) ?>
 
-<?php $qs =  bp_ajax_querystring( 'activity' );
-global $bp;
-?>
+<?php global $bp; ?>
 
-
-<?php if ( bp_has_activities($qs) ) : ?>
+<?php if ( bp_has_activities( bp_ajax_querystring( 'activity' ) ) ) : ?>
 
 	<?php /* Show pagination if JS is not enabled, since the "Load More" link will do nothing */ ?>
 	<noscript>
