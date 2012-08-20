@@ -53,7 +53,10 @@
 		
     <a href="#" id="bug" class="duvidas-ou-sugestoes">
 			Duvidas ou Sugestões
-		</a>
+	</a>
+	<a href="#" id="suporte" class="suporte-helpdesk">
+			Suporte Helpdesk
+	</a>
     <script language="JavaScript">
       /* <![CDATA[ */
       jQuery(document).ready(function() {
