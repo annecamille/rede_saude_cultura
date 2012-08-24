@@ -957,7 +957,7 @@ div.page ul, div.page ol, div.page dl { margin: 0 0 18px 3em; }
 /*div.post ol, div.page ol { list-style: decimal; }*/
 div.post ol ol, div.page ol ol { list-style: upper-alpha; }
 div.post dl, div.page dl { margin-left: 0; }
-div.post dt, div.page dt { font-size: 14px; font-weight: bold; font-family: ; }
+div.post dt, div.page dt { font-size: 14px; font-weight: bold; }
 div.post dd, div.page dd { margin: 0 0 15px 0;}
 div.post ul ul, div.post ol ol, div.post ul ol, div.post ol ul,
 div.page ul ul, div.page ol ol, div.page ul ol, div.page ol ul {
@@ -2203,7 +2203,6 @@ body.home-page div.item-list-tabs,
 ul.button-nav {
 	padding: 0;
 	background-image: url( ./_inc/images/item-list-tabs_bottom.gif );
-	background: #none;
 	background-position: bottom;
 	background-repeat: repeat-x;
 	border-bottom: none;
@@ -3484,7 +3483,6 @@ body {
 	text-align: center;
 	word-wrap: break-word;
 	min-width: 100px;
-	_width:expression(this.currentStyle.getAttribute('100px')); /* min-width for IE7 */
 }
 #wp-admin-bar li a:hover {
 	color: #81b327;
@@ -3551,9 +3549,6 @@ padding: 0 10px 0 0;
 }
 #wp-admin-bar ul li a {
 	display: block;
-}
-#wp-admin-bar ul.main-nav li:hover, #wp-admin-bar ul.main-nav li.sfhover, #wp-admin-bar ul.main-nav li ul li.sfhover {
-	*/border-color: #567312;*/
 }
 
 /*--------------------------------------------------------------
@@ -3679,7 +3674,6 @@ body {
 	height: 190px;
 	margin-bottom: 30px;
 	margin-top: 0;
-	background: url(./_inc/images/bg_topo.jpg) no-repeat;
 }
 #header h1{
   position: absolute;
