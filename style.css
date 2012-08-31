@@ -4665,7 +4665,7 @@ div.generic-button group-button private a.group-button leave-group{
 	right: 145px;
 	background: #7EA732 url('./_inc/images/bg-bug.jpg') 0 35px;
 }
-#bug:hover {
+#bug:hover, #suporte:hover {
 text-decoration: none;
 }
 /* - - - - - BOTÕES - - - -  */
