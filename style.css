@@ -4775,3 +4775,9 @@ h3.widgettitle-hb {
  	width: 50px !important;
  	height: 50px !important;
 }
+div#loginlogout-3 form#loginform {
+	display: none;
+}
+div#loginlogout-3 div {
+	display: none;
+}
