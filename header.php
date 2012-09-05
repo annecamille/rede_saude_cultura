@@ -54,11 +54,25 @@
 			<div id="header">
 			
 				<div class="padder">
-					<div id="barra-header">
-						<ul>
-							<li>MENU-1</li>
-							<li>MENU-2</li>
-							<li>MENU-3</li>
+					<div id="menu-header">
+						<?php
+							wp_nav_menu( array(
+							'menu' 				=> 'menu_header',
+							'theme_location'    => 'menu_header',
+							'container'         => 'div',
+							'container_class'   => 'menu_header',
+							'container_id'      => 'menu_header',
+							'menu_class'        => 'lista_menu_header',
+							'echo'           	=> true,
+							'menu_id'        	=> 'menu_header',
+							'before'         	=> '',
+							'after'          	=> '|',
+							'link_before'    	=> '',
+							'link_after'     	=> '',
+							'depth'          	=> 0,
+							'walker'          	=> '',                
+						) );
+						?>
 					</div>	
 					
 						<?php if($logo): ?>

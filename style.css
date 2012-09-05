@@ -208,8 +208,7 @@ div.widget_rss h4:first-child a img{
 /*--------------------------------------------------------------
 2.2 - Header
 --------------------------------------------------------------*/
-#barra-header {
-	width: 40%;
+#menu-header {
 	position: absolute;
 	right: 0;
 	padding: 3px;
@@ -218,9 +217,16 @@ div.widget_rss h4:first-child a img{
 	border-left: 3px solid #DBDBDB;
 	border-bottom: 1px solid #E0E0E0;
 }
-#barra-header li {
+#menu-header li {
 	float: left;
 	margin: 0 5px;
+}
+#menu_header ul.lista_menu_header a {
+	margin: 0 5px;
+	color: #818181;
+}
+#menu_header ul.lista_menu_header a:hover {
+	color: #646464;
 }
 #header {
 	position: relative;
