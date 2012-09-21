@@ -3974,7 +3974,7 @@ h1, h2, h3, h4 { font-family: Arial, Helvetica, sans-serif; }
 .sf-menu {
   width: 1029px;
   height: 68px;
-  overflow: hidden;
+  overflow: visible;
   background: url(./_inc/images/bg_menu.png) no-repeat;
   margin: 0 0 0 -13px;
   padding: 0 0 0 15px;
@@ -4804,4 +4804,11 @@ div#loginlogout-3 form#loginform {
 }
 div#loginlogout-3 div {
 	display: none;
+}
+div.title-bullet{
+	background: url('./_inc/images/bullet.png') no-repeat 0;
+	padding: 0 0 0 15px;
+	margin:	 0 0 10px 0;
+	font-size: 14px;
+	color: #459C39;
 }
