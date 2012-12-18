@@ -865,6 +865,7 @@ ul.sf-menu li li li.sfHover ul {
 	background:	#5AAADF;
 	color:		#FFFFFF;
 	margin: 	0 0 2px 0;
+	border-radius: 10px;
 	padding:	5px 0 5px 5px;
 }
 .sf-menu li li li {
@@ -4812,5 +4813,5 @@ div.title-bullet{
 }
 
 ul.sf-menu li ul.sub-menu {
-margin: -4px 0px 0px;
+margin: -10px 0px 0px;
 }
